@@ -249,7 +249,7 @@ new Vue({
             const hora = new Date().toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'});
             
             let msg = `👤 ${this.clienteNome || '---'}\n\n`;
-            msg += `🏠 $${this.cidadeSelecionada.taxa} ${this.cidadeSelecionada.nome} (${this.cidadeSelecionada.sigla})\n\n`;
+            msg += `🏠 R$${this.cidadeSelecionada.taxa} ${this.cidadeSelecionada.nome} (${this.cidadeSelecionada.sigla})\n\n`;
             
             Object.keys(this.quantidades).forEach(key => {
                 const qtd = this.quantidades[key];
