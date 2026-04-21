@@ -289,7 +289,7 @@ new Vue({
             alert("Copiado com sucesso!");
         },
         finalizarPedido() {
-            const final = `${this.textoFormatado}\n\n--- COMPROVANTE ABAIXO ---\nPIX: ${this.config.pix}`;
+            const final = `${this.textoFormatado}\n\n--- APOS CONFIRMAÇÃO DO ATENDENTE---\nPIX: ${this.config.pix}`;
             const url = `https://wa.me/${this.config.whatsapp}?text=${encodeURIComponent(final)}`;
             window.open(url, '_blank');
         }
