@@ -61,7 +61,7 @@
     <div v-if="isAdmin" class="admin-panel">
         <h2 style="color: var(--primary)">Painel de Edição</h2>
         <label>Número do WhatsApp (com DDD):</label>
-        <input v-model="config.whatsapp" placeholder="Ex: 5551994973157">
+        <input v-model="config.whatsapp" placeholder="Ex: 5551989753632">
         <label>Chave PIX:</label>
         <input v-model="config.pix" placeholder="51980328408">
         <button @click="saveAdmin" class="btn-enviar" style="margin-top: 20px;">SALVAR E VOLTAR</button>
@@ -133,7 +133,7 @@ new Vue({
         cidadeSelecionada: null,
         quantidades: {},
         config: {
-            whatsapp: "5551994973157", // Altere aqui no admin
+            whatsapp: "5551989753632", // Altere aqui no admin
             pix: "51980328408"
         },
         produtos: [
